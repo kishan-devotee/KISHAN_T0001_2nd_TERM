@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .background-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://imgs.search.brave.com/aEgqDCq_FvYiVfqYyvYplTmw0UgU8tdaYGqoDDfeBGc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ncmVlbi1iYWNr/Z3JvdW5kLXdpdGgt/aW1hZ2UtcGVhY29j/ay1mZWF0aGVyXzEw/NDI1NTQtMTU0OS5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); 
+  }
+  
+  .form-container {
+    z-index: 1;
+    position: relative;
+    background-color: rgba(158, 158, 158, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
