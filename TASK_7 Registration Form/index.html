@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="blur-background"></div>
+    </div>
+
+    <div class="form-container">
+      <form action="#" method="post">
+        <h2>Registration Form</h2>
+        <div class="input-container">
+          <input type="text" placeholder="Username" required />
+        </div>
+        <div class="input-container">
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="input-container">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div class="input-container">
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+        <div class="input-container">
+          <label for="male">male</label>
+          <input type="radio" name="sex" id="male" />
+          <label for="female">female</label>
+          <input type="radio" name="sex" id="female" /><br />
+        </div>
+        <p><u>Hobbies</u></p>
+        <br />
+        <div class="input-container">
+          <label for="Cricket">Cricket</label>
+          <input type="checkbox" name="sex" id="male" />
+          <label for="Chess">Chess</label>
+          <input type="checkbox" name="sex" id="female" /><br />
+        </div>
+        <br />
+        <div class="input-container">
+          <label for="cars">Country:</label>
+
+          <select name="cars" id="cars">
+            <option value="volvo">India</option>
+            <option value="saab">USA</option>
+            <option value="mercedes">Pelastine</option>
+            <option value="audi">pakistan</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
