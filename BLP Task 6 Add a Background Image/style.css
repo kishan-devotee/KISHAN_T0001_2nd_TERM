@@ -1,0 +1,22 @@
+.background-container {
+    background-image: url('https://imgs.search.brave.com/Cgnir5NTW1WfCHpLsBpvjRLV6Ua17wFeEb2cGdxo4Go/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZnJlZWltYWdl/cy5jb20vaW1hZ2Vz/L2hvbWUvYmx1cmJz/L3ByZW1pdW0ud2Vi/cA');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
