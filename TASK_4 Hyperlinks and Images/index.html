@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <main>    
+         <div class="main" id="google">
+            <div class="icons">
+               <a href="#google">
+                
+                <img src="https://imgs.search.brave.com/kv1GngJEC_scbEcDfP5qcZM9WDI8UmV8BuMbTCFkXZU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUzMzc2ZWY4/YzYzZTg3Y2ZhZDEw/NmE0YjcwZGMzMTIx/YTBhOWVlYTM2M2U1/MTA2Y2VkNzJmYTYy/OGQ5MWMzOC9hYm91/dC5nb29nbGUv" alt="google">
+               </a>
+               <a href="#facebook">
+                <img src="https://imgs.search.brave.com/1kC79ZO5fXrWGyD51Ag-J7cdcEsoA0bvDaFAQR_ZgIM/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9LQ01UWXVpVHJL/b200VnlmMEc0Zm9l/dFZPd2hLV3pOYkhX/dW1WNzNJWGV4QUl5/NVRUZ1ppcEw1MldU/dDhJQ0wtb0lv" alt="facebook" height="30">
+               </a>
+            </div>
+            <section>
+                <div class="main-Img">
+                    <a href="https://www.google.com/"> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google"></a>
+                 </div>
+                 <div class="Search-Bar" >
+                   <span class="material-symbols-outlined" id="search">
+                        search
+                    </span>
+                    <form action="" onsubmit="Submit()">
+                         <input type="text" id="Val" autofocus>
+                    </form>
+                    <a href="#"><img src="/assets//image.png" alt="mic" height="25"></a>
+                 </div>
+            </section>
+        </div>
+        <div class="Info" id="facebook">
+            <a href="https://www.facebook.com/"><img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="fb"></a>
+        </div>
+     </main>
+
+     <script>
+        const Submit = (e) => {
+            console.log(e);
+            e.preventDefault()
+            let Inpval = document.getElementById("Val").value
+            console.log(Inpval);
+            window.location.href =`https://search.brave.com/search?q=${Inpval}&
+           source=web`
+        }
+     </script>
+</body>
+</html>
