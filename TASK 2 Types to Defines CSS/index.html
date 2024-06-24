@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Block and Inline Elements Example with Hover Effects</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .block {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .block h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .block p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .block ul {
+            list-style-type: none;
+            padding-left: 20px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .block ul li {
+            margin-bottom: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .block ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .inline {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .inline span {
+            background-color: #ffd700;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .inline span:hover {
+            transform: scale(1.1);
+            background-color: #f0e68c;
+        }
+
+        .inline a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .inline a:hover {
+            color: #0056b3;
+            transform: rotate(5deg);
+        }
+
+        .inline strong {
+            font-weight: bold;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .inline strong:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .inline em {
+            font-style: italic;
+            color: #555;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .inline em:hover {
+            color: #777;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h1>Block-level Elements Example</h1>
+            <p>This is an example of block-level elements:</p>
+            <ul>
+                <li><strong>&lt;div&gt;</strong>: Defines a division or section in an HTML document.</li>
+                <li><strong>&lt;h1&gt;</strong>: Defines a top-level heading.</li>
+                <li><strong>&lt;p&gt;</strong>: Defines a paragraph.</li>
+                <li>
+                    <strong>&lt;ul&gt;</strong>: Defines an unordered list.
+                    <ul>
+                        <li><strong>&lt;li&gt;</strong>: Defines a list item.</li>
+                        <li>Can contain other block-level or inline elements.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h1>Inline Elements Example</h1>
+            <p>This is an example of inline elements:</p>
+            <div class="inline">
+                <span>&lt;span&gt;</span>: A generic inline container.
+                <a href="#">&lt;a&gt;</a>: Defines a hyperlink.
+                <strong>&lt;strong&gt;</strong>: Indicates strong importance.
+                <em>&lt;em&gt;</em>: Emphasizes text.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
